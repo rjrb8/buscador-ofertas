@@ -1,0 +1,16 @@
+.env
+venv/
+__pycache__/
+*.pyc
+
+# Datos personales de candidatos: nunca subir a un servicio externo
+memory/candidatos/*
+!memory/candidatos/.gitkeep
+cv-input/*
+!cv-input/.gitkeep
+logs/*
+!logs/.gitkeep
+output/*
+!output/.gitkeep
+memory/log_ejecuciones.md
+.claude/settings.local.json

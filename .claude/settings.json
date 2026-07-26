@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(memory/**)",
+      "Write(memory/**)",
+      "Edit(memory/**)",
+      "Read(output/**)",
+      "Write(output/**)",
+      "Edit(output/**)",
+      "Read(logs/**)",
+      "Write(logs/**)",
+      "Edit(logs/**)"
+    ],
+    "ask": [
+      "Bash",
+      "Write(**)",
+      "Edit(**)"
+    ],
+    "deny": [
+      "Bash(env)",
+      "Bash(env:*)",
+      "Bash(printenv*)",
+      "Bash(set)",
+      "Bash(export)",
+      "Bash(Get-ChildItem Env:*)",
+      "Bash(gci Env:*)",
+      "Bash(dir Env:*)",
+      "Bash($env:*)",
+      "Bash(echo $*)",
+      "Read(**/.bashrc)",
+      "Read(**/.bash_profile)",
+      "Read(**/.zshrc)",
+      "Read(**/.profile)",
+      "Read(C:/Users/**/.bash_history)",
+      "Read(C:/Windows/System32/**)"
+    ]
+  }
+}
