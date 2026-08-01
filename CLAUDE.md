@@ -34,6 +34,18 @@ características, y entregar los resultados según reglas estrictas de salida.
 ## Orquestación
 1. Delegar primero a planificador para obtener el plan dinámico.
 2. Ejecutar SOLO los subagentes que planificador indicó, en su orden.
-3. Nunca ejecutar analista-cv, buscador-empleo o notificador directamente sin
-   pasar antes por planificador.
+3. Nunca ejecutar analista-cv, optimizador-cv, buscador-empleo o notificador
+   directamente sin pasar antes por planificador.
 4. Nunca paralelizar ni saltar orden sobre el mismo candidato.
+5. optimizador-cv, cuando se ejecute, va siempre después de analista-cv y
+   antes de buscador-empleo. Nunca invertir este orden.
+
+## graphify
+
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+
+Rules:
+- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).

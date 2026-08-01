@@ -1,6 +1,7 @@
 import subprocess
 import json
 import os
+import shutil
 from datetime import datetime
 
 CANDIDATOS_DIR = "memory/candidatos"
@@ -21,8 +22,13 @@ def ejecutar_para_candidato(correo):
         f"estén en ofertas_totales ni en historial_envios, y si encuentras "
         f"nuevas, envíalas por correo siguiendo las reglas de Carriles de seguridad."
     )
+    claude_path = shutil.which("claude")
+    if claude_path is None:
+        log("ERROR: no se encontró el comando 'claude' en el PATH")
+        return
+
     resultado = subprocess.run(
-        ["claude", "-p", prompt],
+        [claude_path, "-p", prompt],
         capture_output=True,
         text=True,
         cwd=os.path.dirname(os.path.abspath(__file__)),
