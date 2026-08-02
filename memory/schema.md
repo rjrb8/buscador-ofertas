@@ -35,6 +35,11 @@ a él.
 | `perfil_declarado` | string | Perfil profesional indicado manualmente por el candidato. Tiene prioridad sobre lo inferido del CV en caso de conflicto. |
 | `cv_ruta` | string | Ruta local o referencia al archivo .docx del CV original. |
 | `cv_resumen_analizado` | object | Resultado estructurado del análisis del CV: experiencia laboral, habilidades técnicas, años de experiencia, idiomas, nivel educativo, logros cuantificables. Estructura interna libre pero debe ser un objeto JSON válido, no texto plano. |
+| `cv_optimizacion_consentimiento` | boolean | Si el candidato aceptó optimizar su CV. |
+| `cv_analisis_ats` | object | Diagnóstico ATS generado por optimizador-cv: `{brechas_palabras_clave, señales_alerta, puntos_debiles}`. |
+| `cv_borrador_1_ruta` | string | Ruta al borrador de CV optimizado, en texto plano. |
+| `cv_borrador_2_ruta` | string | Ruta al borrador de CV optimizado, en formato .docx. |
+| `cv_version_elegida` | string | Versión de CV elegida por el candidato para la búsqueda: `"original"` \| `"borrador_1"` \| `"borrador_2"`. |
 | `fecha_registro` | string (ISO 8601) | Fecha en que el candidato fue registrado por primera vez. No se modifica en ejecuciones posteriores. |
 | `ultima_busqueda` | string (ISO 8601) | Fecha de la búsqueda de ofertas más reciente para este candidato. Se actualiza en cada ejecución. |
 | `ofertas_totales` | array | Todas las ofertas reales encontradas en la búsqueda más reciente, sin filtrar. Cada elemento debe incluir al menos: título, empresa, fuente (sitio), URL y fecha de publicación si está disponible. |
