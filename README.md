@@ -175,7 +175,7 @@ maneja la orquestación descripta arriba.
 ## 📞 Contacto & Soporte
 
 - 👤 **Autor:** Rodolfo Javier Roa Briceño
-- 📧 **Email:** contacto@rjrb.com
+- 📧 **Email:** rjrb825@gmail.com
 - 🔗 **GitHub:** [@rjrb8](https://github.com/rjrb8)
 - 💼 **LinkedIn:** [Rodolfo Roa](https://www.linkedin.com/in/rodolfo-javier-roa-brice%C3%B1o-a0032a11b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bdf2N7W1DScCbgTAvvUKTng%3D%3D)
 
