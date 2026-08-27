@@ -1,3 +1,16 @@
+# 🤖 Buscador de Ofertas Inteligente
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript)]()
+[![Claude API](https://img.shields.io/badge/Claude%20API-Expert-5A67D8?style=flat-square)]()
+
+> **Plataforma de búsqueda automatizada de empleo con agentes inteligentes de IA**
+
+Automatización completa de búsqueda de ofertas laborales usando **arquitectura multiagente** con Claude API. Sistema autónomo que analiza, clasifica y recomienda oportunidades de empleo en tiempo real.
+
+---
+
 # Buscador de Ofertas Laborales
 
 Agente construido sobre Claude Code que recibe los datos de un candidato
@@ -158,3 +171,26 @@ proveer los 4 datos solicitados (nombre completo, ruta del CV `.docx`,
 perfil profesional declarado, correo), más la respuesta de consentimiento
 de optimización cuando `analista-cv` la pida. El resto del proceso lo
 maneja la orquestación descripta arriba.
+
+---
+
+## 📞 Contacto & Soporte
+
+- 👤 **Autor:** Rodolfo Javier Roa Briceño
+- 📧 **Email:** contacto@rjrb.com
+- 🔗 **GitHub:** [@rjrb8](https://github.com/rjrb8)
+- 💼 **LinkedIn:** [Rodolfo Roa](https://www.linkedin.com/in/rodolfo-javier-roa-brice%C3%B1o-a0032a11b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bdf2N7W1DScCbgTAvvUKTng%3D%3D)
+
+---
+
+
+
+<div align="center">
+
+**Desarrollado con ❤️ y potenciado por IA** 🤖
+
+![Stars](https://img.shields.io/github/stars/rjrb8/buscador-ofertas?style=social)
+![Forks](https://img.shields.io/github/forks/rjrb8/buscador-ofertas?style=social)
+
+</div>
+
