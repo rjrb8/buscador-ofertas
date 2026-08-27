@@ -11,8 +11,6 @@ Automatización completa de búsqueda de ofertas laborales usando **arquitectura
 
 ---
 
-# Buscador de Ofertas Laborales
-
 Agente construido sobre Claude Code que recibe los datos de un candidato
 (nombre, CV en `.docx`, perfil profesional declarado y correo), analiza su
 CV, opcionalmente lo optimiza para ATS, busca ofertas laborales reales en
